@@ -1,4 +1,6 @@
 .App {
+
+  flex-direction: column;
   text-align: center;
 }
 .Header {
@@ -6,3 +8,31 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+ h5, h3, h4 {
+  margin: 0;
+  padding: 0;
+ }
+ 
+.listContent {
+
+  width: 100%;
+  margin: 0;
+}
+
+ ul {
+
+
+  list-style-type: none;
+  
+  margin: 0;
+  padding: 0;
+  
+ }
+
+ li {
+   display: flex;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+ }
+

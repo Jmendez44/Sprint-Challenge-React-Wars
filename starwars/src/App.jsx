@@ -1,28 +1,27 @@
 import React, { Component } from 'react';
+
 import './App.css';
 
 
 const Character = props => {
   const {birth_year, created, edited, eye_color, films, gender, hair_color, height, homeworld, mass, name, skin_color, species, starships, url, vehicle} = props.charProp;
   return (
-    <div>
+    <div className="listContent">
       <h2> {name} </h2>
       <ul>
-        <li><h5>Birth Year: </h5> {birth_year} </li>
-        <li><h5>Created: </h5> {created} </li>
-        <li><h5>Edited: </h5> {edited} </li>
-        <li><h5>Eye Color: </h5> {eye_color} </li>
-        <li><h5>Films: </h5> {films} </li>
-        <li><h5>Gender: </h5> {gender} </li>
-        <li><h5>Hair Color: </h5> {hair_color} </li>
-        <li><h5>Height: </h5> {height} </li>
-        <li><h5>Home World: </h5> {homeworld} </li>
-        <li><h5>Mass: </h5> {mass} </li>
-        <li><h5>Skin Color: </h5> {skin_color} </li>
-        <li><h5>Species: </h5> {species} </li>
-        <li><h5>Starships: </h5> {starships} </li>
-        <li><h5>Created: </h5> {url} </li>
-        <li><h5>Vehicle: </h5> {vehicle} </li>
+        <li><h4>Birth Year: </h4> {birth_year} </li>
+        <li><h4>Created: </h4> {created} </li>
+        <li><h4>Edited: </h4> {edited} </li>
+        <li><h4>Eye Color: </h4> {eye_color} </li>
+        <li><h4>Gender: </h4> {gender} </li>
+        <li><h4>Hair Color: </h4> {hair_color} </li>
+        <li><h4>Height: </h4> {height} </li>
+        <li><h4>Home World: </h4> {homeworld} </li>
+        <li><h4>Mass: </h4> {mass} </li>
+        <li><h4>Skin Color: </h4> {skin_color} </li>
+
+        
+        
       </ul>
     </div>
   )
@@ -42,7 +41,7 @@ class App extends Component {
 
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
   }
 
   getCharacters = URL => {
@@ -65,8 +64,6 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-
-
         {this.state.starwarsChars.map((i) => <Character charProp={i} />
         )}
       </div>
