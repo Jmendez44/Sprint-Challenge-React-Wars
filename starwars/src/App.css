@@ -1,27 +1,46 @@
 .App {
-
-  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 75%;
+  margin: auto;
 }
 .Header {
+  width: 100%;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.root {
+  display: flex;
+  justify-content: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
  h5, h3, h4 {
   margin: 0;
   padding: 0;
  }
  
 .listContent {
-
-  width: 100%;
-  margin: 0;
+  background-color: hsl(0, 0%, 100%, 50%); 
+  width: 48%;
+  margin: 10px;
+  padding: 1%;
+  border-radius: 15px;
 }
 
  ul {
 
-
+  
   list-style-type: none;
   
   margin: 0;
@@ -37,3 +56,6 @@
    text-align: center;
  }
 
+h1 span {
+  background-color: hsl(0, 0%, 100%, 50%); 
+}
