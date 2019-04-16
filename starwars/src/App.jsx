@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
+import Character from './components/Character';
+
+
 import './App.css';
+
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: []
+      
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
   }
 
   getCharacters = URL => {
@@ -32,8 +38,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header"><span>React Wars</span></h1>
+        {this.state.starwarsChars.map((i) => <Character charProp={i} key={i.name} />
+        )}
       </div>
+
     );
   }
 }

@@ -26,12 +26,18 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a javascript library that allows you to create large apps using components. React lets you pass data through components using props
+
 - [ ] What does it mean to _think_ in react?
+Break The UI Into A Component Hierarchy
+Build A Static Version in React
+Identify The Minimal Representation Of UI State
+Identify Where Your State Should Live
 
 - [ ] Describe state.
-
+state is managed within a component
 - [ ] Describe props.
-
+props is data passed to a component
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
